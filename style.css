@@ -1,0 +1,45 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  font-weight: 300;
+  font-size: 8px;
+  color: #555555;
+  display: flex;
+  justify-content: center;
+
+  
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Header */
+
+.header {
+  display: flex;
+  width: 700px;
+  height: 300px;
+  margin: 80px 0 40px 0;
+}
+
+.header__foto {
+  width: 33.33333%;
+  overflow: hidden;
+  
+  max-width: 100%;
+ 
+}
+
+.header__info {
+  width: 66.6666%;
+}
+
+.header__img {
+  height: 300px;
+}
+
+.header__info__name {
+  font-size: 40px;
+  font-weight: 600;
+}
