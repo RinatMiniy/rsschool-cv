@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="content">
+  <header class="header">
+    <div class="header__foto">
+      <img src="img/myfoto1.jpg" alt="myfoto" class="header__img">
+    </div>
+    <div class="header__info">
+      <h1 class="header__info__name">
+        Rinat Miniyarov
+      </h1>
+      <h2 class="header__info__position">
+        Student RS-School
+      </h2>
+      <div class="social">
+        <a href="https://t.me/rinatminiy" class="social__item" target="_blank">
+          <img src="img/telegram.svg" height="30" alt="telegram__icon" >
+        </a>
+        <a href="https://github.com/RinatMiniy" class="social__item" target="_blank">
+          <img src="img/github.svg" height="30" alt="github__icon">
+        </a>
+        <a href="mailto:Rinatminiy@gmail.com" class="social__item" target="_blank">
+          <img src="img/gmail.svg" height="30" alt="gmail__icon">
+        </a>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    
+    <div class="cul1">
+      
+      <section>
+        <h3>About Me</h3>
+        <p>The goal is simple - go to work in web developmen, no more no less.</p>
+        <p>I am studying to be an engineer in the design of aircraft and rocket engines, but I plan to work as a React-developer.From the university, I brought out a baggage of knowledge that will help me on this path (the ability to study new information, an engineering approach to solving problems, basic knowledge of mathematics and physics).</p>
+        <p>I got acquainted with programming, in fact, thanks to a scientific project at the university, during which it was necessary to write a program in Python for calculating with a parameter in the combustion chamber of an aircraft. After this experience, I realized what I want to do.</p>
+      </section>
+
+      <section>
+        <h3>Contacts</h3>
+        <ul>
+          <li><strong>Gmail</strong>:<br> RinatMiniy@gmail.com</li>
+          <li><strong>Telegram</strong>:<br> https://t.me/rinatminiy</li>
+          <li><strong>Github</strong>:<br> https://github.com/RinatMiniy </li>
+        </ul>
+      </section>
+      <section>
+        <h3>Skills</h3>
+        <ul>
+          <li>HTML/CSS
+            <ul>
+              <li>LESS</li>
+              <li>Bootstrap</li>
+            </ul>
+          </li>
+          <li>JavaScript</li>
+          <li>Git</li>
+          <li>Python
+            <ul>
+              <li>Numpy</li>
+              <li>Mathprolib</li>
+              <li>Pandas</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+        
+      
+    </div>
+    <div class="cul2">
+      <section>
+        <h3>Code example</h3>
+        <p><strong>Input</strong> - number</p>
+        <p><strong>Output</strong> - table of size n*n filled with numbers from 1 to n**2 in a spiral starting from the upper left corner and twisted clockwise</p>
+        <code>
+          n = int(input())<br>
+          m = [[0] * n for i in range(n)]<br>
+          i, j, di, dj = 0, 0, 0, 1<br>
+          for k in range(n * n):<br>
+          m[i][j] = k + 1<br>
+          if (not -1 &lt; i + di &lt; n) or<br>(not -1 &lt; j + dj &lt; n) or<br>[i + di][j + dj] != 0:<br>
+          di, dj = dj, -di<br>
+          i, j = i + di, j + dj<br>
+          [print(*i) for i in m]<br>
+        </code>
+      </section>
+      <section>
+        <h3>Education</h3>
+        <ul>
+          <li>JS - Современный учебник JavaScript("learn.javascript.ru")</li>
+          <li>HTML/CSS - FreeCodeCamp courses</li>
+          <li>Python - courses from Stepik</li>
+          <li>Git - Screencast fron learn.javascript.ru</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>English</h3>
+        <p>A2 (Previously, the level was definitely higher, but the lack of practice in speaking and writing affected. But listening and reading are at a high level, because of a lot of information I learn in English)</p>
+        <p>I had part in cultural exchange. During which there was a language practice, but not with native speakers</p>
+      </section>
+      
+      
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer__text">Made by @RinatMiniy in <time datetime="2021-03-06 19:00">2021</time></div>
+  </footer>
+</div>
+</body>
+</html>
